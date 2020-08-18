@@ -1,0 +1,25 @@
+.gymnasieval {
+   height: 20vw;
+   width: 20vw;
+   overflow: hidden;
+   background-size: cover;
+   display: inline-block;
+   color: white;
+   text-decoration: none;
+   font-size: 5vw;
+   line-height: 20vw;
+   border-radius: 5px;
+   text-align: center;
+   border-style: solid;
+   border-color: black;
+}
+a {
+   text-decoration: none;
+}
+body {
+   text-align: center;
+}
+.rubrik {
+   font-size: 5vw;
+   font-weight: bold;
+}

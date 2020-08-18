@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lovnedräknaren</title>
+    <link rel="stylesheet" href="sommar.css" type="text/css" media="all">
+    <link rel="stylesheet" href="host.css" type="text/css" media="all">
+    <link rel="stylesheet" href="jul.css" type="text/css" media="all">
+    <link rel="stylesheet" href="sport.css" type="text/css" media="all">
+    <link rel="stylesheet" href="pask.css" type="text/css" media="all">
+</head>
+<body>
+   ! Inga tillgängliga datum för höst-, påsk-, sport- och sommarlov! Nedräkningen bygger på gissningar.
+   <div id="nedrakning"></div>
+   <script>
+      const hostlov = new Date("Oct 23, 2020 16:00:00").getTime();
+      const jullov = new Date("Dec 18, 2020 12:00:00").getTime();
+      const sportlov = new Date("Feb 26, 2021 16:00:00").getTime();
+      const pasklov = new Date("Apr 01, 2021 16:00:00").getTime();
+      const sommarlov = new Date("Jun 11, 2021 12:00:00").getTime();
+      
+      const hostlovSlut = new Date("Nov 02, 2020 00:00:00").getTime();
+      const jullovSlut = new Date("Jan 12, 2021 00:00:00").getTime();
+      const sportlovSlut = new Date("Mar 08, 2021 00:00:00").getTime();
+      const pasklovSlut = new Date("Apr 12, 2021 00:00:00").getTime();
+      const sommarlovSlut = new Date("Aug 10, 2021 00:00:00").getTime();
+   </script>
+   <script src="skript.js"></script>
+</body>
+</html>

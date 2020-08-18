@@ -1,0 +1,21 @@
+.jul {
+  text-align: center;
+  font-size: 10vw;
+  font-style: italic;
+  color: white;
+  margin-top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 1px red;
+}
+.julBakgrund {
+  background-image: url('https://cdn.pixabay.com/photo/2018/01/02/17/13/christmas-balls-3056638_960_720.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
