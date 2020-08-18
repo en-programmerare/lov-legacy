@@ -1,13 +1,13 @@
 .gymnasieval {
-   height: 20vw;
-   width: 20vw;
+   height: 40vw;
+   width: 40vw;
    overflow: hidden;
    background-size: cover;
    display: inline-block;
    color: white;
    text-decoration: none;
-   font-size: 5vw;
-   line-height: 20vw;
+   font-size: 10vw;
+   line-height: 40vw;
    border-radius: 5px;
    text-align: center;
    border-style: solid;
@@ -20,6 +20,18 @@ body {
    text-align: center;
 }
 .rubrik {
-   font-size: 5vw;
+   font-size: 10vw;
    font-weight: bold;
+}
+@media only screen and (min-width: 500px) {
+   .gymnasieval {
+      height: 20vw;
+      width: 20vw;
+      font-size: 5vw;
+      line-height: 20vw;
+   }
+   .rubrik {
+      font-size: 5vw;
+      font-weight: bold;
+   }
 }
