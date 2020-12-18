@@ -50,7 +50,9 @@ function rakna() {
       var bild = document.createElement("img");
       bild.src = "https://www.bildapersonalmaklarna.se/wp-content/uploads/2017/11/tome-och-slade.gif";
       bild.classList.add("slade");
+      bild.id = avstand.toString();
       document.getElementsByTagName("body")[0].appendChild(bild);
+      document.getElementById((avstand + 5).toString().remove();
 
    }
    else {
