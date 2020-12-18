@@ -47,12 +47,10 @@ function rakna() {
    var sekunder = Math.floor((avstand % (1000 * 60)) / 1000);
    
    if(avstand < 0) {
-      cykler++;
       document.getElementById("nedrakning").innerHTML = "Nu är det lov!";
       var bild = document.createElement("img");
       bild.src = "https://www.bildapersonalmaklarna.se/wp-content/uploads/2017/11/tome-och-slade.gif";
       bild.classList.add("slade");
-      bild.id = "slade" + cykler;
       document.getElementsByTagName("body")[0].appendChild(bild);
 
    }
