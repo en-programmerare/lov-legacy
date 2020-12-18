@@ -40,19 +40,22 @@ function beraknaNedrakningsdatum() {
 function rakna() {
    nu = new Date().getTime();
    let avstand = nedrakningsdatum - nu;
+   var cykler = 0;
    var dagar = Math.floor(avstand / (1000 * 60 * 60 * 24));
    var timmar = Math.floor((avstand % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
    var minuter = Math.floor((avstand % (1000 * 60 * 60)) / (1000 * 60));
    var sekunder = Math.floor((avstand % (1000 * 60)) / 1000);
    
    if(avstand < 0) {
+      cykler++;
       document.getElementById("nedrakning").innerHTML = "Nu är det lov!";
       var bild = document.createElement("img");
       bild.src = "https://www.bildapersonalmaklarna.se/wp-content/uploads/2017/11/tome-och-slade.gif";
       bild.classList.add("slade");
-      bild.id = avstand.toString();
+      bild.id = "slade" + cykler;
       document.getElementsByTagName("body")[0].appendChild(bild);
-      document.getElementById((avstand + 5).toString().remove();
+      if(cykler - 1 > 0)
+        document.getElementById("slade" + (cykler - 1)).remove();
 
    }
    else {
