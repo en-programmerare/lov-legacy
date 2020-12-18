@@ -54,8 +54,6 @@ function rakna() {
       bild.classList.add("slade");
       bild.id = "slade" + cykler;
       document.getElementsByTagName("body")[0].appendChild(bild);
-      if(cykler - 1 > 0)
-        document.getElementById("slade" + (cykler - 1)).remove();
 
    }
    else {
