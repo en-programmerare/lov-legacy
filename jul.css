@@ -19,8 +19,24 @@
   background-size: cover;
   background-position: center;
 }
+.slade {
+  position: absolute;
+  animation-name: flyg;
+  animation-duration: 10s;
+  
+}
 @media only screen and (max-width: 620px) {
    .jul {
       text-shadow: 2px 1px red;
    }
+}
+@keyframes flyg {
+  from {
+    top: 110vh;
+    left: 110vw;
+  }
+  to {
+    top: -10vh;
+    left: -10vw;
+  }
 }
