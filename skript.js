@@ -37,7 +37,6 @@ function beraknaNedrakningsdatum() {
       document.getElementsByTagName("body")[0].classList.add("sommarBakgrund");
    }
 }
-
 function rakna() {
    nu = new Date().getTime();
    let avstand = nedrakningsdatum - nu;
@@ -48,6 +47,11 @@ function rakna() {
    
    if(avstand < 0) {
       document.getElementById("nedrakning").innerHTML = "Nu är det lov!";
+      var bild = document.createElement("img");
+      bild.src = "https://www.bildapersonalmaklarna.se/wp-content/uploads/2017/11/tome-och-slade.gif";
+      bild.classList.add("slade");
+      document.getElementsByTagName("body")[0].appendChild(bild);
+
    }
    else {
       document.getElementById("nedrakning").innerHTML = dagar + "d " + timmar + "h " + minuter + "m " + sekunder + "s";
