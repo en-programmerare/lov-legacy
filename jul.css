@@ -23,6 +23,8 @@
   position: absolute;
   animation-name: flyg;
   animation-duration: 10s;
+  width: 640px;
+  height: 545px;
   
 }
 @media only screen and (max-width: 620px) {
@@ -32,11 +34,11 @@
 }
 @keyframes flyg {
   from {
-    top: 110vh;
-    left: 110vw;
+    top: calc(50vh - 272px);
+    left: calc(0vw - 640px);
   }
   to {
-    top: -10vh;
-    left: -10vw;
+    top: calc(50vh - 272px);
+    left: calc(100vw + 640px);
   }
 }
