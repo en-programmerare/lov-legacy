@@ -50,7 +50,7 @@ function rakna() {
       cykler++;
       document.getElementById("nedrakning").innerHTML = "Nu är det lov!";
       var bild = document.createElement("img");
-      bild.src = "https://www.bildapersonalmaklarna.se/wp-content/uploads/2017/11/tome-och-slade.gif";
+      bild.src = "https://cdn.pixabay.com/photo/2012/05/04/10/17/sun-47083_1280.png";
       bild.classList.add("slade");
       bild.id = "slade" + cykler;
       document.getElementsByTagName("body")[0].appendChild(bild);
