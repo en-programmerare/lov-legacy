@@ -1,41 +1,45 @@
 let nu = new Date().getTime();
 let nedrakningsdatum;
 let cykler = 0;
+let argument = window.location.href.indexOf("?") === -1 ? "" : window.location.href.substring(window.location.href.indexOf("?lov=") + 5);
 
 beraknaNedrakningsdatum();
 rakna();
 setInterval(rakna, 1000);
 
 function beraknaNedrakningsdatum() {
-   if(hostlovSlut - nu > 0) {
+   if(hostlovSlut - nu > 0 || argument === "host") {
       nedrakningsdatum = hostlov;
       document.title = "Höstlovsnedräknaren";
       document.getElementById("nedrakning").classList.add("host");
       document.getElementsByTagName("body")[0].classList.add("hostBakgrund");
    }
-   else if(jullovSlut - nu > 0) {
+   else if(jullovSlut - nu > 0 || argument === "jul") {
       nedrakningsdatum = jullov;
       document.title = "Jullovsnedräknaren";
       document.getElementById("nedrakning").classList.add("jul");
       document.getElementsByTagName("body")[0].classList.add("julBakgrund");
    }
-   else if(sportlovSlut - nu > 0) {
+   else if(sportlovSlut - nu > 0 || argument === "sport") {
       nedrakningsdatum = sportlov;
       document.title = "Sportlovsnedräknaren";
       document.getElementById("nedrakning").classList.add("sport");
       document.getElementsByTagName("body")[0].classList.add("sportBakgrund");
    }
-   else if(pasklovSlut - nu > 0) {
+   else if(pasklovSlut - nu > 0 || argument === "pask") {
       nedrakningsdatum = pasklov;
       document.title = "Påsklovsnedräknaren";
       document.getElementById("nedrakning").classList.add("pask");
       document.getElementsByTagName("body")[0].classList.add("paskBakgrund");
    }
-   else if(sommarlovSlut - nu > 0) {
+   else if(sommarlovSlut - nu > 0 || argument === "sommar") {
       nedrakningsdatum = sommarlov;
       document.title = "Sommarlovsnedräknaren";
       document.getElementById("nedrakning").classList.add("sommar");
       document.getElementsByTagName("body")[0].classList.add("sommarBakgrund");
+   },
+   else {
+      document.write("Inget lov inläst.");
    }
 }
 function rakna() {
@@ -49,13 +53,6 @@ function rakna() {
    if(avstand < 0) {
       cykler++;
       document.getElementById("nedrakning").innerHTML = "Nu är det lov!";
-      var bild = document.createElement("img");
-      bild.src = "https://cdn.pixabay.com/photo/2012/05/04/10/17/sun-47083_1280.png";
-      bild.classList.add("slade");
-      bild.id = "slade" + cykler;
-      document.getElementsByTagName("body")[0].appendChild(bild);
-      if(cykler - 10 > 0)
-        document.getElementById("slade" + (cykler - 10)).remove();
 
    }
    else {
