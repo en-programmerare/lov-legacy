@@ -37,7 +37,7 @@ function beraknaNedrakningsdatum() {
       document.title = "Sommarlovsnedräknaren";
       document.getElementById("nedrakning").classList.add("sommar");
       document.getElementsByTagName("body")[0].classList.add("sommarBakgrund");
-   },
+   }
    else {
       document.write("Inget lov inläst.");
    }
