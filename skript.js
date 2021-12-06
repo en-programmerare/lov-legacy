@@ -67,6 +67,6 @@ function rakna() {
 
    }
    else {
-      document.getElementById("nedrakning").innerHTML = dagar + "d " + timmar + "h " + minuter + "m " + sekunder + "s";
+      document.getElementById("nedrakning").innerHTML = dagar + "d " + timmar + "t " + minuter + "m " + sekunder + "s";
    }
 }
